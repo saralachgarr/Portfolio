@@ -1,0 +1,77 @@
+{
+  "Home": "Home",
+  "About": "About",
+  "Skills": "Skills",
+  "Projects": "Projects",
+  "Education & Experience": "Education & Experience",
+  "Contact Me": "Contact",
+  "Full Stack Developer": "Full Stack Developer",
+
+  "bio": "Hello, I’m Sara Lachgar, a software development student passionate about technology and its transformative impact. I build modern and efficient web applications and aim to contribute to innovative projects that drive technological growth.",
+
+  "View CV": "View CV",
+  "Scroll Down": "Scroll Down",
+
+  "About Me": "About Me",
+  "Web Developer": "Web Developer",
+  "IT Support Specialist": "IT Support Specialist",
+
+  "about_paragraph_1": "I am a Software Engineering student pursuing a Professional Bachelor’s degree in Casablanca. I have a strong foundation in front-end and back-end web development and have worked on academic and professional projects using HTML, CSS, JavaScript, PHP, React, Laravel, and MySQL.",
+
+  "about_paragraph_2": "Motivated, autonomous, and a strong team player, I continuously seek to improve my technical and soft skills. My goal is to take part in innovative projects and deliver reliable, meaningful, and impactful digital solutions.",
+
+  "Education": "Education",
+  "Experience": "Experience",
+
+  "education": {
+    "items": [
+      {
+        "title": "Professional Bachelor’s Degree in Software Engineering",
+        "institution": "ESTEM",
+        "location": "Casablanca",
+        "period": "2025 - Present"
+      },
+      {
+        "title": "Specialized Technician Diploma in Full Stack Development",
+        "institution": "Specialized Institute of Offshoring Training",
+        "location": "Casablanca",
+        "period": "2023 - 2025"
+      },
+      {
+        "title": "High School Diploma in Physical Sciences",
+        "institution": "Abdelmalek Essaadi High School",
+        "location": "Casablanca",
+        "period": "2021 - 2022"
+      }
+    ]
+  },
+
+  "experience": {
+    "items": [
+      {
+        "title": "Final Year Internship – Web Development",
+        "institution": "MIAGE",
+        "period": "03/2025 - 07/2025",
+        "description": "Development of a web-based diploma management system. UML system design, native PHP and MySQL development, Admin dashboard (CRUD, statistics), Recruiter interface, and data security."
+      },
+      {
+        "title": "Mini Project – Web Development",
+        "institution": "PRAGMATIC Consulting",
+        "period": "11/2025 - 12/2025",
+        "description": "Task management web application with role-based access and interactive dashboard. Technologies: MongoDB, Express.js, React, Node.js (MERN Stack)."
+      },
+      {
+        "title": "Internship – Web Development",
+        "institution": "CABINET PARTNET",
+        "period": "07/2024",
+        "description": "Front-end development using HTML, CSS, and JavaScript. Back-end user and data management with PHP and MySQL. Interactive forms with client- and server-side validation."
+      }
+    ]
+  },
+
+  "Available for work": "Available for work",
+  "Let's build something": "Let’s build something",
+  "incredible together!": "incredible together!",
+
+  "2025 Mohamed Maimoune. All rights reserved": "2025 Sara Lachgar. All rights reserved"
+}

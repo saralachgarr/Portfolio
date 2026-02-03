@@ -1,0 +1,77 @@
+{
+  "Home": "Accueil",
+  "About": "À propos",
+  "Skills": "Compétences",
+  "Projects": "Projets",
+  "Education & Experience": "Formation & Expérience",
+  "Contact Me": "Contact",
+  "Full Stack Developer": "Développeuse Full Stack",
+
+  "bio": "Bonjour, je suis Sara Lachgar, étudiante en développement informatique et passionnée par les technologies et leur impact transformateur. Je développe des applications web modernes et performantes et je souhaite contribuer à des projets innovants participant à l’évolution technologique.",
+
+  "View CV": "Voir le CV",
+  "Scroll Down": "Scroll Down",
+
+  "About Me": "À propos de moi",
+  "Web Developer": "Développeuse Web",
+  "IT Support Specialist": "Technicienne Support IT",
+
+  "about_paragraph_1": "Étudiante en Licence Professionnelle Génie Logiciel à l’ESTEM Casablanca, je possède une solide base en développement web front-end et back-end. J’ai travaillé sur plusieurs projets académiques et professionnels en utilisant HTML, CSS, JavaScript, PHP, React, Laravel et MySQL.",
+
+  "about_paragraph_2": "Motivée, autonome et dotée d’un bon esprit d’équipe, je cherche continuellement à améliorer mes compétences techniques et humaines. Mon objectif est de participer à des projets innovants et d’apporter une réelle valeur ajoutée aux solutions développées.",
+
+  "Education": "Formation",
+  "Experience": "Expérience",
+
+  "education": {
+    "items": [
+      {
+        "title": "Licence Professionnelle en Génie Logiciel",
+        "institution": "ESTEM",
+        "location": "Casablanca",
+        "period": "2025 - en cours"
+      },
+      {
+        "title": "Diplôme de Technicien Spécialisé en Développement Full Stack",
+        "institution": "Institut Spécialisé de Formation Offshoring",
+        "location": "Casablanca",
+        "period": "2023 - 2025"
+      },
+      {
+        "title": "Baccalauréat Sciences Physiques",
+        "institution": "Lycée Abdelmalek Essaadi",
+        "location": "Casablanca",
+        "period": "2021 - 2022"
+      }
+    ]
+  },
+
+  "experience": {
+    "items": [
+      {
+        "title": "Stage PFE – Développement Web",
+        "institution": "MIAGE",
+        "period": "03/2025 - 07/2025",
+        "description": "Développement d’une application web de gestion des diplômes. Conception UML, développement en PHP natif et MySQL, interface Administrateur (CRUD, statistiques), interface Recruteur, sécurisation des accès."
+      },
+      {
+        "title": "Mini-projet – Développement Web",
+        "institution": "PRAGMATIC Consulting",
+        "period": "11/2025 - 12/2025",
+        "description": "Application web de gestion et suivi des tâches avec tableau de bord interactif. Technologies : MongoDB, Express.js, React, Node.js (MERN Stack)."
+      },
+      {
+        "title": "Stage – Développement Web",
+        "institution": "CABINET PARTNET",
+        "period": "07/2024",
+        "description": "Développement front-end en HTML, CSS et JavaScript. Gestion back-end avec PHP et MySQL. Création de formulaires avec validation côté client et serveur."
+      }
+    ]
+  },
+
+  "Available for work": "Disponible pour travailler",
+  "Let's build something": "Construisons quelque chose",
+  "incredible together!": "d’incroyable ensemble !",
+
+  "2025 Mohamed Maimoune. All rights reserved": "2025 Sara Lachgar. Tous droits réservés"
+}
