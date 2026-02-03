@@ -164,7 +164,7 @@ export const Hero = () => {
                 delay={0.6}
               >
                 <a
-                href="/docs/CV.pdf"
+                href="/docs/SaraCV.pdf"
 
                   target="_blank"
                   rel="noopener noreferrer"
