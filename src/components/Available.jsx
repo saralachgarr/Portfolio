@@ -4,10 +4,6 @@ import { useTheme } from "./theme-provider";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Contact } from "./Contact";
@@ -16,27 +12,22 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { useTranslation } from "react-i18next";
 import AnimatedContent from "./flowBits/AnimatedContent";
 import TextType from "./flowBits/TextType";
 import FadeContent from "./flowBits/FadeContent";
 
 export const Available = () => {
-  const { t } = useTranslation();
   const { theme } = useTheme();
 
   return (
     <section className="flexy flex-col gap-6 pb-20">
+      {/* Availability Badge */}
       <AnimatedContent
         distance={20}
         direction="vertical"
-        reverse={false}
         duration={0.8}
-        ease="easeOut"
         initialOpacity={0}
         animateOpacity
-        scale={1}
-        threshold={0.2}
         delay={0.1}
       >
         <div
@@ -55,11 +46,13 @@ export const Available = () => {
               }`}
             ></span>
           </span>
-          <p className="max-sm:text-sm">{t("Available for work")}</p>
+          <p className="max-sm:text-sm">Available for exciting projects</p>
         </div>
       </AnimatedContent>
+
+      {/* Typewriter Text */}
       <TextType
-        text={`${t("Let's build something")}\n${t("incredible together!")}`}
+        text={`Let's create engaging web experiences\nand bring innovative projects to life!`}
         className="font-bold text-2xl max-sm:text-xl text-center whitespace-pre-line"
         typingSpeed={70}
         deletingSpeed={60}
@@ -68,19 +61,43 @@ export const Available = () => {
         loop={false}
         cursorCharacter=""
       />
+
+      {/* Polished Intro Paragraph */}
       <FadeContent
         blur={true}
         duration={1100}
         easing="ease-out"
         initialOpacity={0}
       >
-        <a
-          href="mailto:mohamedmaimouneh@gmail.com"
-          className="bg-[#0072ff0a] pt-1 underline decoration-2 text-xl max-sm:text-base underline-offset-2"
-        >
-          mohamedmaimouneh@gmail.com
-        </a>
+        <p className="text-center text-lg max-sm:text-base leading-relaxed">
+          I am currently open to new opportunities where I can apply my skills 
+          in web development and software engineering. I enjoy building 
+          responsive, user-friendly applications and contributing to projects 
+          that make a real impact.
+          <br /><br />
+          If you have an exciting project or opportunity, feel free to reach out 
+          via email or the contact form below — I’d love to collaborate and bring ideas to life!
+        </p>
       </FadeContent>
+
+      {/* Email Link */}
+      {/* Email Link */}
+<FadeContent
+  blur={true}
+  duration={1100}
+  easing="ease-out"
+  initialOpacity={0}
+>
+  <a
+    href="mailto:saralachgar01@gmail.com"
+    className="bg-[#0072ff0a] pt-1 underline decoration-2 text-xl max-sm:text-base underline-offset-2"
+  >
+    saralachgar01@gmail.com
+  </a>
+</FadeContent>
+
+
+      {/* Contact Sheet */}
       <Sheet>
         <Tooltip>
           <TooltipTrigger asChild>
@@ -88,17 +105,13 @@ export const Available = () => {
               <AnimatedContent
                 distance={20}
                 direction="vertical"
-                reverse={false}
                 duration={0.8}
-                ease="easeOut"
                 initialOpacity={0}
                 animateOpacity
-                scale={1}
-                threshold={0.2}
                 delay={0.1}
               >
                 <span
-                  className={`h-11! w-11! max-sm:h-10! max-sm:w-10! cursor-pointer inline-flex items-center justify-center rounded-full shadow-[var(--custom-shadow)] ButtonHover ${
+                  className={`h-11 w-11 max-sm:h-10 max-sm:w-10 cursor-pointer inline-flex items-center justify-center rounded-full shadow-[var(--custom-shadow)] ButtonHover ${
                     theme === "light" ? "bg-[#d9e2e9]" : "bg-[#00bf6354]"
                   }`}
                 >
@@ -108,7 +121,7 @@ export const Available = () => {
             </SheetTrigger>
           </TooltipTrigger>
           <TooltipContent>
-            <p>{t("Contact Me")}</p>
+            <p>Contact Me</p>
           </TooltipContent>
         </Tooltip>
         <SheetContent side="bottom">

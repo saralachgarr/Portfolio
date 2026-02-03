@@ -33,9 +33,8 @@ export const Skills = () => {
     { logo: "TailwindCss.png", title: "TailwindCSS" },
     { logo: "Bootstrap.png", title: "Bootstrap" },
     { logo: "React.png", title: "React Js" },
-    { logo: "Redux.png", title: "Redux" },
-    { logo: "ShadCn.png", title: "ShadCn UI" },
-    { logo: "MaterialUI.png", title: "Material UI" },
+
+   
   ];
 
   const backendStacks = [

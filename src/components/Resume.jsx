@@ -30,7 +30,7 @@ export const Resume = () => {
         initialOpacity={0}
       >
         <a
-          href={`/docs/${i18n.language}_CV.pdf`}
+     href="/docs/CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="flexy mt-4 h-20 w-[45%] max-sm:w-[80%] max-md:w-[80%] max-lg:w-[60%] m-auto relative"

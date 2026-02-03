@@ -31,7 +31,7 @@ export const Hero = () => {
       <div className="w-[80%] max-lg:w-[85%] grid grid-cols-[1.5fr_1fr] max-[900px]:grid-cols-1 pb-15 max-sm:pb-8 gap-20 max-[900px]:gap-5">
         <div className="text-[var(--text-dark)] max-[900px]:order-2 max-[900px]:text-center">
           <SplitText
-            text="Mohamed Maimoune"
+            text="Lachgar sara"
             tag="h1"
             className="text-[40px] max-sm:text-3xl max-[370px]:text-2xl! max-lg:text-3xl font-bold leading-14 max-lg:leading-10 max-[900px]:leading-8 text-[var(--text-dark)]! max-[900px]:hidden"
             delay={50}
@@ -100,10 +100,10 @@ export const Hero = () => {
                 </g>
               </svg>
               <a
-                href="mailto:mohamedmaimouneh@gmail.com"
+                href="mailto:saralachgar01@gmail.com"
                 className="max-sm:text-sm hover:underline"
               >
-                mohamadmaimouneh@gmail.com
+               saralachgar01@gmail.com
               </a>
             </div>
           </FadeContent>
@@ -164,7 +164,8 @@ export const Hero = () => {
                 delay={0.6}
               >
                 <a
-                  href={`/docs/${i18n.language}_CV.pdf`}
+                href="/docs/CV.pdf"
+
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`flexy font-bold text-sm gap-2 py-2 rounded-full px-4 shadow-md ButtonHover click-sound ${
@@ -211,7 +212,7 @@ export const Hero = () => {
                   delay={250}
                   initialOpacity={0}
                 >
-                  <a href="https://linkedin.com/in/maimoune">
+                  <a href="https://www.linkedin.com/in/sara-lachgar-b1abab353/">
                     <svg
                       viewBox="0 0 20 20"
                       version="1.1"
@@ -274,7 +275,7 @@ export const Hero = () => {
                   delay={250}
                   initialOpacity={0}
                 >
-                  <a href="https://github.com/maimoune21">
+                  <a href="https://github.com/saralachgarr">
                     <svg
                       fill="var(--icons-color)"
                       viewBox="-2.5 0 19 19"
@@ -300,7 +301,7 @@ export const Hero = () => {
         </div>
         <span className="min-[900px]:hidden! flexy flex-col">
           <SplitText
-            text="Mohamed Maimoune"
+            text="Lachgar sara"
             tag="h1"
             className="text-[40px] max-sm:text-3xl max-[370px]:text-2xl! max-lg:text-3xl font-bold leading-14 max-lg:leading-10 max-[900px]:leading-8 text-[var(--text-dark)]!"
             delay={50}
@@ -421,6 +422,11 @@ export const Hero = () => {
           {/* Main image container */}
           <div className="relative w-full h-full rounded-full z-20">
             <div className="relative hero-img group h-72 max-[450px]:h-50! max-[900px]:h-55 max-lg:h-65 w-80 max-[900px]:w-60 max-[450px]:w-55! max-lg:w-70 max-[900px]:order-1 rounded-full overflow-hidden">
+               <img
+    src="/photos/sara.png"
+    alt="Sara Lachgar"
+    className="w-full h-full object-cover"
+  />
               <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-lg font-bold text-center select-none">
                   FullStack Developer

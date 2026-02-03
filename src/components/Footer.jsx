@@ -23,15 +23,15 @@ export const Footer = () => {
             <img
               src={
                 theme === "light"
-                  ? "/photos/MM_black_text.png"
-                  : "/photos/MM_white_text.png"
+                  ? "/photos/log.png"
+                  : "/photos/log.png"
               }
               className="w-8 max-[400px]:w-6 cursor-pointer"
               alt="MM"
             />
           </Link>
           <p className="font-medium max-sm:text-sm max-[400px]:text-center">
-            &copy; {t("2025 Mohamed Maimoune. All rights reserved")}
+            &copy; {t("2025 Lachgar sara. All rights reserved")}
           </p>
         </div>
       </FadeContent>
@@ -43,7 +43,7 @@ export const Footer = () => {
           delay={300}
           initialOpacity={0}
         >
-          <a href="https://linkedin.com/in/maimoune" target="_blank">
+          <a href="https://www.linkedin.com/in/sara-lachgar-b1abab353/" target="_blank">
             <svg
               viewBox="0 0 20 20"
               version="1.1"
@@ -98,7 +98,7 @@ export const Footer = () => {
           delay={400}
           initialOpacity={0}
         >
-          <a href="https://github.com/maimoune21" target="_blank">
+          <a href="https://github.com/saralachgarr" target="_blank">
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -131,17 +131,7 @@ export const Footer = () => {
             </svg>
           </a>
         </FadeContent>
-        <FadeContent
-          blur={true}
-          duration={1100}
-          easing="ease-out"
-          delay={600}
-          initialOpacity={0}
-        >
-          <a href="https://www.instagram.com/med_maimoune" target="_blank">
-            <Instagram className="stroke-[var(--icons-color)]" />
-          </a>
-        </FadeContent>
+      
       </div>
     </footer>
   );

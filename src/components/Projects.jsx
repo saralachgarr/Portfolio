@@ -7,10 +7,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Foody } from "./projects/Foody";
 import { Mihna } from "./projects/Mihna";
-import { Okad } from "./projects/Okad";
-import { Youchef } from "./projects/Youchef";
+import { Suivi } from "./projects/Suivi";
+import { Diplome } from "./projects/Diplome";
+import { Travel } from "./projects/Travel";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useTranslation } from "react-i18next";
 import AnimatedContent from "./flowBits/AnimatedContent";
@@ -19,35 +19,28 @@ import FadeContent from "./flowBits/FadeContent";
 export const Projects = () => {
   const { t } = useTranslation();
   const projects = [
-    {
-      name: "Mihna",
-      description: t("mihna_description"),
-      date: "02/2025 - 04/2025",
-      image: "/photos/projects/mihna/Mihna.png",
-      page: <Mihna />,
-    },
-    {
-      name: "YouChef",
-      description: t("youchef_description"),
-      date: "03/2024 - 04/2024",
-      image: "/photos/projects/youchef/Youchef.png",
-      page: <Youchef />,
-    },
-    {
-      name: "Okad",
-      description: t("okad_description"),
-      date: "04/2024 - 06/2024",
-      image: "/photos/projects/okad/Okad.png",
-      page: <Okad />,
-    },
-    {
-      name: "Foody",
-      description: t("foody_description"),
-      date: "02/2024 - 03/2024",
-      image: "/photos/projects/foody/Foody.png",
-      page: <Foody />,
-    },
-  ];
+  {
+    name: "Suivi des Tâches",
+    description: "Organisez vos tâches, respectez vos délais et boostez votre productivité.",
+    date: "05/11/2025 - 26/12/2025",
+    image: "/photos/projects/suivi/suivi.png",
+    page: <Suivi />,
+  },
+  {
+    name: "Gestion de Certification",
+    description: "Application web pour gérer, vérifier et sécuriser les diplômes et certificats.",
+    date: "01/03/2025 - 31/03/2025",
+    image: "/photos/projects/diplome/dip.png",
+    page: <Diplome />,
+  },
+  {
+    name: "TravelEase",
+    description: "Plateforme de réservation de voyages incluant hôtels, vols et voitures.",
+    date: "Projet académique – 2025",
+    image: "/photos/projects/Travel/travel.png",
+    page: <Travel />,
+  },
+];
 
   return (
     <section id="projects" className="pt-35 max-lg:pt-20 pb-20 max-sm:pb-10">

@@ -8,14 +8,51 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useTheme } from "./theme-provider";
-import { useTranslation } from "react-i18next";
 import AnimatedContent from "./flowBits/AnimatedContent";
 import FadeContent from "./flowBits/FadeContent";
 
 export const Certificates = () => {
-  const { t } = useTranslation();
   const { theme } = useTheme();
-  const certificates = t("certificates.items", { returnObjects: true });
+
+  // Your actual certificates
+  const certificates = [
+    {
+      name: "MongoDB Aggregation Fundamentals",
+      platform: "Udemy",
+      owner: "Sara Lachgar",
+      photo: "Certif15.png", // add your image in /photos/certificates/
+      link: "https://www.credly.com/badges/249cabb7-b6e4-4c24-9d71-2c20062d316d",
+      technologies: ["MongoDB", "Aggregation"],
+      date: "22 Dec 2025",
+      reference: "0001",
+      description:
+        "This digital credential validates your knowledge in building powerful aggregation pipelines to process, transform, and analyze data efficiently in MongoDB.",
+    },
+    {
+      name: "From Relational Model (SQL) to MongoDB's Document Model",
+      platform: "Udemy",
+      owner: "Sara Lachgar",
+      photo: "Certif16.png", // add your image
+      link: "https://www.credly.com/badges/74a205db-c86b-4932-af2d-9c3547607ab3", // replace with actual link if available
+      technologies: ["MongoDB", "SQL", "Data Modeling"],
+      date: "29 Nov 2025",
+      reference: "0002",
+      description:
+        "This digital credential validates your knowledge of converting SQL or relational models to MongoDB’s document model.",
+    },
+    {
+      name: "Figma UI/UX Complete Bootcamp: Design 3 JobReady Projects",
+      platform: "Vapa Academy",
+      owner: "Sara Lachgar",
+      photo: "Certif17.png", // add your image
+      link: "#", // replace with actual link if available
+      technologies: ["Figma", "UI/UX", "Design"],
+      date: "23 Sep 2024",
+      reference: "0003",
+      description:
+        "Complete UI/UX design bootcamp with hands-on projects, total duration 18 hours.",
+    },
+  ];
 
   return (
     <section className="pt-35 max-sm:pt-10">
@@ -32,10 +69,8 @@ export const Certificates = () => {
         delay={0.2}
       >
         <div className="flexy gap-2">
-          <h1 className="font-bold text-2xl">{t("Certificates")}</h1>
-          <p className="font-bold text-[var(--icons-color)] mt-0.5 text-lg">
-            • {certificates.length}
-          </p>
+          <h1 className="font-bold text-2xl">Certificates</h1>
+          <p className="font-bold text-[var(--icons-color)] mt-0.5 text-lg">• {certificates.length}</p>
         </div>
       </AnimatedContent>
 
@@ -43,17 +78,8 @@ export const Certificates = () => {
         <Carousel opts={{ align: "start", slidesToScroll: 1, loop: false }}>
           <CarouselContent>
             {certificates.map((cert, index) => (
-              <CarouselItem
-                key={index}
-                className="md:basis-1/2 lg:basis-1/3 flex-shrink-0"
-              >
-                <FadeContent
-                  blur={true}
-                  duration={600}
-                  easing="ease-out"
-                  delay={100}
-                  initialOpacity={0}
-                >
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 flex-shrink-0">
+                <FadeContent blur={true} duration={600} easing="ease-out" delay={100} initialOpacity={0}>
                   <a
                     href={cert.link}
                     target="_blank"
@@ -76,7 +102,7 @@ export const Certificates = () => {
                                        transform transition duration-300 
                                        bg-[#00000033] text-white text-sm py-0.5 px-2 rounded-full font-normal shadow-[var(--custom-shadow)]"
                         >
-                          {t("Open")}
+                          Open
                         </span>
                         <span className="group-hover/certificate:scale-90 transform transition duration-300 rounded-full bg-[#00000033] p-1 shadow-[var(--custom-shadow)]">
                           <ArrowUpRight className="stroke-white size-5" />
@@ -84,9 +110,7 @@ export const Certificates = () => {
                       </div>
                     </div>
 
-                    <h1 className="font-bold text-lg leading-[1] mt-3 truncate">
-                      {cert.name}
-                    </h1>
+                    <h1 className="font-bold text-lg leading-[1] mt-3 truncate">{cert.name}</h1>
                     <h3 className="font-semibold mb-2">{cert.platform}</h3>
 
                     <div className="relative mt-auto flexy justify-between!">

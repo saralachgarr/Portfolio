@@ -8,9 +8,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
-import { Foody } from "./Foody";
-import { Youchef } from "./Youchef";
-import { Okad } from "./Okad";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { useTheme } from "../theme-provider";
 import FadeContent from "../flowBits/FadeContent";
